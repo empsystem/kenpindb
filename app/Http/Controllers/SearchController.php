@@ -14,6 +14,11 @@ use App\Item;
 
 class SearchController extends Controller
 {
+	public function __construct()
+	{
+		$this->middleware('auth');
+	}
+
 	public function index(SearchRequest $request)
 	{
 

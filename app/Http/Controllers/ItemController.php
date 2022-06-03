@@ -37,7 +37,7 @@ class ItemController extends Controller
 		if(!empty($keyword)) {
 			$query->where('name', 'like', '%' . $keyword . '%');
 		}
-		
+
 		//itemsテーブルの全レコードを取得
 		$items = $query->orderBy('id', 'desc')->paginate($paginate);
 

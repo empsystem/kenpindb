@@ -17,7 +17,7 @@ class CreateItemsTable extends Migration
 			$table->bigIncrements('id');
 			$table->string('code')->nullable()->commnet('商品コード');
 			$table->string('name')->nullable()->commnet('商品名');
-			$table->integer('jan')->comment('JANコード');
+			$table->bigInteger('jan')->comment('JANコード');
 			$table->string('comment')->comment('コメント');
 			$table->string('image')->nullable()->comment('画像1');
 			$table->string('image2')->nullable()->comment('画像2');

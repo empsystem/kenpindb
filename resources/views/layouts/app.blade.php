@@ -29,7 +29,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ route('index') }}">
-											検品用データベース
+											JANコード検品データベース
                     </a>
                 </div>
 
@@ -43,8 +43,8 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @guest
-                            <li><a href="{{ route('item.index') }}">商品一覧</a></li>
-                            <li><a href="{{ route('login') }}">Login</a></li>
+							<li><a href="{{ route('login') }}">ログイン</a></li>
+							<li><a href="{{ route('register') }}">新規登録</a></li>
                         @else
                             <li><a href="{{ route('item.index') }}">商品一覧</a></li>
                             <li class="dropdown">
